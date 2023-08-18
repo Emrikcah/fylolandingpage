@@ -1,17 +1,23 @@
 ---
+import '@styles/index.css'
+import Hero from "../components/Hero.astro";
 ---
-
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Your title here</title>
-	</head>
-	<body>
-		<p>hello</p>
-	</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+      <meta name="generator" content={Astro.generator} />
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+      <!-- Google Fonts end -->
+      <title>Fylo</title>
+   </head>
+   <body class="container mx-auto">
+      <Hero/>
+   </body>
 </html>
