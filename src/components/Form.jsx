@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Input from "./Input";
 import Button from "./Button";
 
-const Form = ({ btnText }) => {
+const Form = ({ btnText,placeholder,styles,moveBtn }) => {
    const [name, setName] = useState("");
    const [isInvalid, setIsInvalid] = useState(false);
    const [invalidEmail, setInvalidEmail] = useState(false);
@@ -10,8 +10,8 @@ const Form = ({ btnText }) => {
    const handleChange = (e) => {
       setName(e.target.value);
    };
-   //pass all props to input as one object
-   const stateBundle = { name, isInvalid, invalidEmail, handleChange };
+   //pass all props to input as an object
+   const stateBundle = { name, isInvalid, invalidEmail, handleChange,placeholder };
 
    //check for valid entries
    const handleSubmit = (e) => {
@@ -34,9 +34,9 @@ const Form = ({ btnText }) => {
       }
    };
    return (
-      <form id="myForm" className="grid" onSubmit={handleSubmit}>
+      <form id="myForm" className={styles} onSubmit={handleSubmit}>
          <Input {...stateBundle} />
-         <Button text={btnText} />
+         <Button text={btnText} moveBtn={moveBtn} />
       </form>
    );
 };

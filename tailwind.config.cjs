@@ -10,6 +10,9 @@ module.exports = {
 			liteGrayishBlue:'hsl(240, 75%, 98%)',
 			liteGray:'hsl(0, 0%, 75%)',
 			red:'red',
+			white:'white',
+			emerald: '#71dfcc'
+			
 		},
 		fontFamily:{
 			sans: ['Open Sans','sans-serif'],
@@ -29,7 +32,15 @@ module.exports = {
 				'2xl':'1440px'
 			},
 			gridTemplateColumns:{
-				'13': 'repeat(3, minmax(max-content,max-content))'
+				'13': 'repeat(3, minmax(max-content,max-content))',
+				'14': '32px,1fr,1fr',
+				'15': '38px,1fr,1fr',
+				'form':'320px,200px',
+				'testimonial': 'auto,auto',
+				'access': 'minmax(0, 1fr),minmax(0, 1fr)',
+			},
+			gridTemplateRows:{
+				'13':'auto,auto,auto,auto'
 			}
 		},
 	},

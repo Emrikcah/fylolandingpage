@@ -1,6 +1,9 @@
 ---
 import '@styles/index.css'
 import Hero from "../components/Hero.astro";
+import Testimonial from 'src/components/Testimonial.astro';
+import Access from 'src/components/Access.astro';
+import Footer from 'src/components/Footer.astro';
 ---
 
 <!DOCTYPE html>
@@ -15,9 +18,17 @@ import Hero from "../components/Hero.astro";
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
       <!-- Google Fonts end -->
+      <!-- Bootstrap icons -->
+      <!-- npm i bootstrap-icons -->
+      <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+      <!-- Bootstrap icons end -->
+
       <title>Fylo</title>
    </head>
    <body class="container mx-auto">
       <Hero/>
+      <Testimonial/>
+      <Access/>
+      <Footer/>
    </body>
 </html>

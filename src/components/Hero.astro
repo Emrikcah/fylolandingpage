@@ -3,18 +3,18 @@ import Header from "./Header.astro";
 import Form from './Form'
 ---
 
-<main class="">
+<main class="mb-[90px]">
    <div class="section-container">
       <Header/>
       <div class="mt-24 md:grid lg:grid-cols-2 lg:gap-3">
          <div class="w-[304px] md:w-[450px] lg:w-[440px] xl:w-[640px] lg:col-start-2 md:justify-self-center">
             <img src="/assets/illustration-1.svg" alt="two people putting giant files in a giant folder" >
          </div>
-         <article class="text-center lg:text-left mt-10 lg:col-start-1 lg:row-start-1 lg:self-center ">
-            <h1 class="text-2xl font-bold leading-9"> All your files in one secure location, accessible anywhere.</h1>
-            <p class="text-sm leading-5 mt-6 mb-8">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+         <article class="  text-center lg:text-left mt-10 lg:col-start-1 lg:row-start-1 lg:self-center ">
+            <h1 class="font-raleway text-2xl lg:text-[40px] font-bold leading-9 lg:leading-[60px]"> All your files in one secure location, accessible anywhere.</h1>
+            <p class="text-sm lg:text-lg tracking-wide leading-5 mt-6 mb-8">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
             <!-- form goes here -->
-            <Form client:load btnText="Get Started"/>
+            <Form client:load btnText="Get Started" styles={'grid lg:grid-cols-form gap-4 items-baseline'} moveBtn={false} placeholder="Enter your email..."/>
          </article>
       </div>
    </div>

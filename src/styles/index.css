@@ -2,9 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer components{
-   .section-container{
-      @apply mx-auto max-w-xs md:max-w-2xl lg:max-w-4xl xl:max-w-7xl;
+@layer base{
+   a,i{
+      @apply hover:text-brightBlue
    }
 }
+
+@layer components {
+   .section-container {
+      @apply w-[90%] max-w-[1280px] mx-auto;
+   }
+
+   .card-padding {
+      @apply pt-7 pl-[26px] pr-[12.74px] lg:pr-[37px] pb-[19px];
+   }
+
+   .access-padding {
+      @apply pt-[54px] px-[41px] lg:px-0 pb-[71px];
+   }
+
+   .layout {
+     display: grid;
+     grid-template-rows: auto auto;
+     grid-template-columns: repeat(4,auto);
+   }
+}
+
+/* .access-padding  */

@@ -1,0 +1,21 @@
+---
+import Form from "./Form";
+---
+
+<section id="access" class="access bg-desaturatedBlue access-padding">
+   <div class="section-container">
+      
+         <div class=" lg:grid grid-cols-access justify-between items-center">
+            <div class="text-center lg:text-left text-white max-w-[533px]">
+               <h2 class="text-lg xl:text-[32px] font-bold font-raleway mb-8">Get early access today</h2>
+               <p class="text-sm xl:text-base xl:tracking-wide mb-6 xl:mb-0">
+                  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be
+                  happy to help you.
+               </p>
+            </div>
+            <Form client:load btnText="Get Started For Free" styles={'grid '} moveBtn={true} placeholder="email@example.com"/>
+   
+         </div>
+     
+   </div>
+</section>
