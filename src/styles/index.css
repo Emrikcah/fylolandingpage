@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base{
-   a,i{
+   a:not(.no),i{
       @apply hover:text-brightBlue
    }
 }
