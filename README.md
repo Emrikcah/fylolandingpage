@@ -7,7 +7,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 ### Links
 
 - Solution URL: [Github](https://github.com/Emrikcah/fylolandingpage)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Fylo](https://fylolandingpage-emrikcah.vercel.app/)
 
 ## My process
 
@@ -28,9 +28,6 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 
 
-## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 
 
